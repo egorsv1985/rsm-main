@@ -1857,6 +1857,127 @@
         max-width: 350px;
         margin: auto;
     }
+
+    .work {
+        display: none;
+    }
+
+    .work-mobile {
+        padding-bottom: 140px;
+    }
+
+    .work-mobile .work-mobile__box {
+
+        background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+        border-radius: 20px;
+
+    }
+
+    .work-mobile .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-mobile h2 {
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #FFFFFF;
+
+    }
+
+    .work-mobile ul {
+        max-width: 750px;
+        width: 100%;
+    }
+
+    .work-mobile ul li {
+        padding: 0;
+        margin-bottom: 2px;
+    }
+
+    .work-mobile ul .uk-accordion-title {
+        height: 50px;
+        padding: 10px 0;
+
+        border-bottom: 1.6px solid #FFFFFF;
+
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #FFFFFF;
+
+
+    }
+
+    .work-mobile ul .uk-open .uk-accordion-title {
+        background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+        color: #F5F7FC;
+        border-bottom: none;
+
+        padding-bottom: 40px;
+    }
+
+    .work-mobile .uk-accordion>:nth-child(n+2) {
+        margin: 0;
+    }
+
+    .work-mobile .uk-accordion-title::before {
+        content: '+';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+        background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+        color: #F5F7FC;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .work-mobile ul .uk-open .uk-accordion-title::before {
+        content: '-';
+        background: #F5F7FC;
+        color: #AF1B1B;
+    }
+
+    .work-mobile .uk-accordion-content {
+        margin-bottom: 2px;
+        margin-top: 0;
+        padding: 25px;
+    }
+
+    .work .uk-accordion-content p {
+        margin-bottom: 5px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+
+    }
+
+    .work-mobile .uk-accordion-content ul li {
+        margin-bottom: 5px;
+        margin-left: 20px;
+
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #FFFFFF;
+        list-style: disc;
+    }
 }
 
 
