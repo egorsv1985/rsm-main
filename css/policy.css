@@ -1,0 +1,62 @@
+.main .policy > div {
+    max-width: 860px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .policy > div h1 {
+    margin-bottom: 25px;
+    align-self: flex-end;
+    width: 100%;
+    text-align: left;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0d0a46;
+}
+.main .policy > div h1 span {
+    font-family: "Gilroy", sans-serif;
+    background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main .policy > div h2 {
+    margin-bottom: 15px;
+    align-content: flex-start;
+    width: 100%;
+    padding-bottom: 8px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0d0a46;
+    position: relative;
+}
+.main .policy > div h2:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main .policy > div p {
+    margin-bottom: 25px;
+    align-self: flex-end;
+    font-size: 14px;
+    line-height: 150%;
+    color: #555371;
+}
+
+@media screen and (max-width: 767px) {
+    .main .policy > div {
+        padding-top: 40px;
+    }
+    .main .policy > div h1 {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}

@@ -1,0 +1,303 @@
+.main .top {
+    padding-top: 50px;
+    padding-bottom: 115px;
+}
+.main .top > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .top__left h1 {
+    margin-bottom: 20px;
+    max-width: 550px;
+
+    font-family: "Gilroy", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60px;
+    color: #0d0a46;
+}
+.main .top__left h1 span {
+    font-family: 'Gilroy', sans-serif;
+    background: linear-gradient(270deg, #AF1B1B 0%, #E22222 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .top__left > span {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #555371;
+}
+.main .top__left > span a {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #AF1B1B;
+}
+.main .top__right {
+    max-width: 500px;
+    width: 80%;
+    position: relative;
+}
+.main .top__right_mobile {
+    display: none;
+}
+.main .top__right > div {
+    position: absolute;
+    top: 50px;
+}
+.main .top__right > img {
+    width: 100%;
+    object-fit: contain;
+}
+.main .articles > div {
+    max-width: 1200px;
+}
+.main .articles > div > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 70px;
+}
+.main .articles > div > ul .article {
+    background: #f5f7fc;
+    border-radius: 20px;
+    box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
+    transition: all 0.3s ease-in-out;
+}
+.main .articles > div > ul .article a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main .articles > div > ul .article a img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 230px;
+    min-height: 230px;
+    object-fit: cover;
+}
+.main .articles > div > ul .article__info {
+    padding: 40px 45px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .articles > div > ul .article__info_date {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    line-height: 175%;
+    text-align: center;
+    color: #555371;
+}
+.main .articles > div > ul .article__info p {
+    margin-bottom: 20px;
+    flex: 1;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #0d0a46;
+}
+.main .articles > div > ul .article__info_link {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #AF1B1B;
+}
+.main .articles > div > ul .article__info_link svg {
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+.main .articles > div > ul .article:hover {
+    box-shadow: -2px -2px 5px rgb(255 255 255 / 90%), 2px 2px 4px rgb(57 65 124 / 20%);
+    transform: translateY(3px);
+}
+.main .articles > div > ul .article:hover .article__info_link svg {
+    transform: translateX(10px);
+}
+@media screen and (max-width: 1200px) {
+    .main .top {
+        padding-top: 50px;
+        padding-bottom: 115px;
+    }
+    .main .top > div {
+        flex-direction: column-reverse;
+    }
+    .main .top__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .top__left h1 {
+        margin-bottom: 20px;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        color: #0d0a46;
+    }
+    .main .top__left p {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 175%;
+        text-align: center;
+        color: #555371;
+    }
+    .main .top__left form {
+        margin-bottom: 15px;
+        max-width: 360px;
+        width: 100%;
+    }
+    .main .top__left form label {
+        position: relative;
+        width: 100%;
+    }
+    .main .top__left form label input {
+        height: 60px;
+        padding: 0 35px;
+        width: 100%;
+        border: none;
+    }
+    .main .top__left form label input::placeholder {
+        font-size: 14px;
+        line-height: 175%;
+        color: #555371;
+    }
+    .main .top__left > span {
+        font-family: "Gilroy", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        color: #555371;
+    }
+    .main .top__left > span a {
+        font-family: "Gilroy", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        color: #52daac;
+    }
+    .main .top__right {
+        margin-bottom: 20px;
+    }
+    .main .top__right_mobile {
+        width: 50%;
+        display: block;
+    }
+    .main .articles > div ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 70px;
+    }
+    .main .articles > div ul .article {
+        border-radius: 20px;
+    }
+    .main .articles > div ul .article a {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .articles > div ul .article a img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .main .articles > div ul .article__info {
+        padding: 40px 45px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .articles > div ul .article__info_date {
+        margin-bottom: 20px;
+        display: block;
+        font-size: 14px;
+        line-height: 175%;
+        text-align: center;
+        color: #555371;
+    }
+    .main .articles > div ul .article__info p {
+        margin-bottom: 20px;
+        flex: 1;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #0d0a46;
+    }
+    .main .articles > div ul .article__info_link {
+        font-family: "Gilroy", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .main .articles > div ul .article__info_link svg {
+        margin-left: 5px;
+    }
+    .main .articles > div ul .article:hover .article__info_link svg {
+        transform: translateX(10px);
+    }
+}
+@media screen and (max-width: 767px) {
+    .main .top {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+    .main .top > div {
+        flex-direction: column-reverse;
+    }
+    .main .top__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .top__left h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .main .top__right_mobile {
+        width: 100%;
+        max-width: 500px;
+    }
+    .main .articles > div ul {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 40px;
+    }
+    .main .articles > div ul .article {
+        background: #f7f8fc;
+        border-radius: 20px;
+    }
+    .main .articles > div ul .article a {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .articles > div ul .article a img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .main .articles > div ul .article__info {
+        padding: 20px 15px;
+    }
+    .main .articles > div ul .article__info p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

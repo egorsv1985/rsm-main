@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>PCM</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+  
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    
+    <button class="hamburger hamburger--spin burger" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+    </button>
+    
+    <a href='/' class="header__logo">
+      <img src="images/logo.png" alt="logo" />
+    </a>
+    
+    <nav class="header__nav">
+      <ul>
+        <li>
+          Решения
+          <ul class="dropdown">
+            <li>
+              <a href="/">Управление ремонтами и надежностью оборудования</a>
+            </li>
+            <li>
+              <a href="/">Управление энергоэффетивностью и углеродным следом</a>
+            </li>
+            <li>
+              <a href="/">Сервис управления выездными сотрудниками</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          Компания
+          <ul class="dropdown">
+            <li>
+              <a href="/">Блог</a>
+            </li>
+            <li>
+              <a href="/">О нас</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="/">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header__right">
+      <a href="tel: +7 499 703−22−48" class="header__phone">+7 499 703−22−48</a>
+      <a class="button" href="#modal-center" uk-toggle>Консультация</a>
+    </div>
+    
+    <a class="phone" href="tel: +7 499 703−22−48">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.9122 27.1245C20.7685 27.1245 19.1618 26.7108 16.756 25.3667C13.8304 23.726 11.5675 22.2114 8.65772 19.3092C5.85225 16.5055 4.48702 14.6903 2.57628 11.2133C0.417684 7.28754 0.785652 5.22973 1.19698 4.35024C1.68682 3.29907 2.40987 2.67036 3.34444 2.04633C3.87527 1.69854 4.43702 1.4004 5.02257 1.15571C5.08116 1.13051 5.13565 1.10649 5.18429 1.08481C5.47433 0.954144 5.91378 0.756683 6.47042 0.96762C6.8419 1.10707 7.17354 1.39243 7.69269 1.90512C8.75733 2.95512 10.2122 5.2936 10.7489 6.44204C11.1093 7.21606 11.3478 7.727 11.3483 8.30004C11.3483 8.97094 11.0108 9.48833 10.6013 10.0467C10.5245 10.1516 10.4483 10.2518 10.3745 10.3491C9.92862 10.935 9.83077 11.1043 9.89522 11.4067C10.0259 12.0143 11.0003 13.8231 12.6017 15.4209C14.203 17.0188 15.9597 17.9317 16.5696 18.0618C16.8849 18.1291 17.0577 18.0272 17.6624 17.5655C17.7491 17.4993 17.8382 17.4307 17.9314 17.3622C18.556 16.8975 19.0493 16.5688 19.7044 16.5688H19.7079C20.278 16.5688 20.7661 16.8161 21.5747 17.2239C22.6294 17.7559 25.0382 19.192 26.0946 20.2579C26.6085 20.7758 26.895 21.1063 27.0351 21.4772C27.246 22.0356 27.0474 22.4733 26.9179 22.7663C26.8962 22.8149 26.8722 22.8682 26.847 22.9274C26.6003 23.5119 26.3005 24.0725 25.9511 24.602C25.3282 25.5336 24.6972 26.2549 23.6437 26.7454C23.1027 27.0012 22.5106 27.1309 21.9122 27.1245Z" fill="#0D0A46"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main class="main">
+  <section class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="/">Главная</a>
+        </li>
+        <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.140165 0.187536C0.327052 -0.0625115 0.630056 -0.0625115 0.816943 0.187536L4.41379 5L0.816943 9.81246C0.630056 10.0625 0.327052 10.0625 0.140165 9.81246C-0.0467218 9.56241 -0.0467218 9.15701 0.140165 8.90696L3.06024 5L0.140165 1.09304C-0.0467218 0.842995 -0.0467218 0.437585 0.140165 0.187536Z" fill="#0D0A46"/>
+        </svg>
+        <li>
+          <a class="active" href="/">Управление мобильными бригадами</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="top">
+    <div class="container" uk-scrollspy="target: .uk-scrollspy-class; cls: uk-animation-slide-bottom-medium; delay: 100;">
+      <div class="top__left">
+        <h1 class="uk-scrollspy-class">О <span>нас</span></h1>
+        <p class="uk-scrollspy-class">Компания РСМ-системы создана в 2007 году группой специалистов, имеющих большой опыт разработки и внедрения информационных систем управления техническим обслуживанием и ремонтами (ТОиР), рисками, надежностью и эффективностью производственного оборудования в энергетической, нефтегазодобывающей, транспортной и других отраслях.</p>
+      </div>
+      <img alt="" class="top__right" src="images/mainPage/top.png" />
+    </div>
+    
+    <div class="container" uk-scrollspy="cls: uk-animation-fade">
+      <ul>
+        <li>
+          <img alt="" src="images/mainPage/user.png" />
+          <div>
+            <h4>15+</h4>
+            <p>лет на рынке<br/>РФ и СНГ</p>
+          </div>
+        </li>
+        <li>
+          <img alt="" src="images/mainPage/location.png" />
+          <div>
+            <h4>75+</h4>
+            <p>млрд. руб.<br/>сэкономили за 2021 г.</p>
+          </div>
+        </li>
+        <li>
+          <img alt="" src="images/mainPage/Server.png" />
+          <div>
+            <h4>30+</h4>
+            <p>разработчиков<br/>в штате</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="info">
+    <div class="container">
+      <div>
+        <h3>Перспективы, охват рынка и курс развития</h3>
+        <p>Наша компания предоставляет широкий перечень услуг по в области управления производственными активами, используя в своей деятельности самые передовые и современные технологии и стандарты, как зарубежные, так и  отечественные. Вас обязательно заинтересуют наши знания и опыт, если ваша компания имеет на балансе и эксплуатирует технологическое оборудование, от которого зависит Ваш бизнес и которое требует регулярной заботы. </p>
+      </div>
+      
+      <div>
+        <h3>Специализация</h3>
+        <p>Мы не создаем «любые» информационные системы. Мы  акцентировали свое внимание на изучении проблем управления эксплуатацией и  ремонтами производственных активов и поиска их решений. Именно такой подход позволяет нам заявлять о наличии у нас исключительной специализации в этом направлении.</p>
+      </div>
+      
+      <div>
+        <h3>Отечественная разработка</h3>
+        <p>Программные комплексы, на базе которых мы создаем свои решения, являются нашей собственной, отечественной, разработкой, что дает нам определенную гибкость при работе с каждым Заказчиком.</p>
+      </div>
+      
+      <div>
+        <h3>Соответствия стандартам</h3>
+        <p>Все наши разработки выполняются в соответствии с общепринятым мировыми и отечественными стандартами и методологиями.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="office">
+    <h2>Офис <span>РСМ</span></h2>
+    
+    <div class="uk-position-relative" tabindex="-1" uk-slider="center: true">
+      <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-1-2@m">
+          <img src="images/office.png" />
+        </li>
+        <li class="uk-width-1-2@m">
+          <img src="images/office.png" />
+        </li>
+        <li class="uk-width-1-2@m">
+          <img src="images/office.png" />
+        </li>
+        <li class="uk-width-1-2@m">
+          <img src="images/office.png" />
+        </li>
+      </ul>
+  
+      <a class="nav uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="24" fill="url(#paint0_linear_1172:8538)"/>
+          <path d="M31.8125 25.4985H17.7287L22.0394 30.676C22.2409 30.9185 22.3379 31.2312 22.309 31.5452C22.28 31.8592 22.1275 32.1488 21.885 32.3504C21.6425 32.552 21.3298 32.6489 21.0158 32.62C20.7018 32.591 20.4122 32.4385 20.2106 32.196L14.2731 25.071C14.2332 25.0143 14.1975 24.9548 14.1662 24.8929C14.1662 24.8335 14.1663 24.7979 14.0831 24.7385C14.0293 24.6024 14.0011 24.4574 14 24.311C14.0011 24.1646 14.0293 24.0197 14.0831 23.8835C14.0831 23.8241 14.0831 23.7885 14.1662 23.7291C14.1975 23.6672 14.2332 23.6077 14.2731 23.551L20.2106 16.426C20.3223 16.292 20.4621 16.1842 20.6201 16.1103C20.7782 16.0364 20.9505 15.9982 21.125 15.9985C21.4025 15.998 21.6714 16.0946 21.885 16.2716C22.0052 16.3713 22.1046 16.4938 22.1775 16.6319C22.2504 16.7701 22.2952 16.9213 22.3096 17.0768C22.3239 17.2323 22.3074 17.3892 22.2611 17.5383C22.2147 17.6875 22.1394 17.826 22.0394 17.946L17.7287 23.1235H31.8125C32.1274 23.1235 32.4295 23.2486 32.6522 23.4713C32.8749 23.694 33 23.9961 33 24.311C33 24.626 32.8749 24.928 32.6522 25.1507C32.4295 25.3734 32.1274 25.4985 31.8125 25.4985Z" fill="white"/>
+          <defs>
+            <linearGradient id="paint0_linear_1172:8538" x1="48" y1="24.0461" x2="2.11507e-07" y2="24.0461" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#AF1B1B"/>
+              <stop offset="1" stop-color="#E22222"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+      <a class="nav uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="url(#paint0_linear_1172:8538)"/>
+          <path d="M16.1875 22.5015L30.2713 22.5015L25.9606 17.324C25.7591 17.0815 25.6621 16.7688 25.691 16.4548C25.72 16.1408 25.8725 15.8512 26.115 15.6496C26.3575 15.448 26.6702 15.3511 26.9842 15.38C27.2982 15.409 27.5878 15.5615 27.7894 15.804L33.7269 22.929C33.7668 22.9857 33.8025 23.0452 33.8338 23.1071C33.8338 23.1665 33.8337 23.2021 33.9169 23.2615C33.9707 23.3976 33.9989 23.5426 34 23.689C33.9989 23.8354 33.9707 23.9803 33.9169 24.1165C33.9169 24.1759 33.9169 24.2115 33.8338 24.2709C33.8025 24.3328 33.7668 24.3923 33.7269 24.449L27.7894 31.574C27.6777 31.708 27.5379 31.8158 27.3799 31.8897C27.2218 31.9636 27.0495 32.0018 26.875 32.0015C26.5975 32.002 26.3286 31.9054 26.115 31.7284C25.9948 31.6287 25.8954 31.5062 25.8225 31.3681C25.7496 31.2299 25.7048 31.0787 25.6904 30.9232C25.6761 30.7677 25.6926 30.6108 25.7389 30.4617C25.7853 30.3125 25.8606 30.174 25.9606 30.054L30.2713 24.8765L16.1875 24.8765C15.8726 24.8765 15.5705 24.7514 15.3478 24.5287C15.1251 24.306 15 24.0039 15 23.689C15 23.374 15.1251 23.072 15.3478 22.8493C15.5705 22.6266 15.8726 22.5015 16.1875 22.5015Z" fill="white"/>
+          <defs>
+            <linearGradient id="paint0_linear_1172:8538" x1="48" y1="24.0461" x2="2.11507e-07" y2="24.0461" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#AF1B1B"/>
+              <stop offset="1" stop-color="#E22222"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <section class="command">
+    <div class="container">
+      <h2>Команда <span>РСМ</span></h2>
+      <ul>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <img src="images/person.png" />
+          <p>Константин Пивоваров</p>
+          <span>Технический директор</span>
+        </li>
+        <li>
+          <p>Хотите работать в <span>РСМ</span> Системы?</p>
+          <button class="button">Оставить заявку</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="map">
+    <div class="container">
+      <h2 uk-scrollspy="cls: uk-animation-slide-bottom-medium">Наши кейсы</h2>
+      <div class="map__content">
+        <img src="images/mainPage/map.png" />
+        <span class="map__marker" style="left: 18%; bottom: 21%">
+              <img class="map__tooltip" src="images/tooltips/4.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 27%; bottom: 25%">
+              <img class="map__tooltip" src="images/tooltips/1.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 20%; bottom: 16%">
+              <img class="map__tooltip" src="images/tooltips/3.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 30%; bottom: 23%">
+              <img class="map__tooltip" src="images/tooltips/2.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 32%; bottom: 30%">
+              <img class="map__tooltip" src="images/tooltips/2.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 31%; bottom: 35%">
+              <img class="map__tooltip" src="images/tooltips/4.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 45%; bottom: 18%">
+              <img class="map__tooltip" src="images/tooltips/2.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 36%; bottom: 29%">
+              <img class="map__tooltip" src="images/tooltips/8.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 38%; bottom: 28%">
+              <img class="map__tooltip" src="images/tooltips/9.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 34%; bottom: 31%">
+              <img class="map__tooltip" src="images/tooltips/2.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 40%; bottom: 31%">
+              <img class="map__tooltip" src="images/tooltips/7.png" />
+            </span>
+        
+        <span class="map__marker" style="left: 38%; bottom: 37%">
+              <img class="map__tooltip" src="images/tooltips/2.png" />
+            </span>
+      </div>
+      <div class="map__slider uk-position-relative" tabindex="-1" uk-slider>
+        
+        <ul class="uk-slider-items uk-child-width-1-1">
+          <li>
+            <img src="images/mainPage/RZD.png" />
+            <span>РЖД</span>
+            
+            <div>
+              <span>1.3 раза</span>
+              <p>Увеличение межремонтных циклов</p>
+            </div>
+          </li>
+          
+          <li>
+            <img src="images/mainPage/RZD.png" />
+            <span>РЖД</span>
+            
+            <div>
+              <span>1.3 раза</span>
+              <p>Увеличение межремонтных циклов</p>
+            </div>
+          </li>
+          
+          <li>
+            <img src="images/mainPage/RZD.png" />
+            <span>РЖД</span>
+            
+            <div>
+              <span>1.3 раза</span>
+              <p>Увеличение межремонтных циклов</p>
+            </div>
+          </li>
+        </ul>
+        
+        <a class="nav uk-position-bottom-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="url(#paint0_linear_1172:8538)"/>
+            <path d="M31.8125 25.4985H17.7287L22.0394 30.676C22.2409 30.9185 22.3379 31.2312 22.309 31.5452C22.28 31.8592 22.1275 32.1488 21.885 32.3504C21.6425 32.552 21.3298 32.6489 21.0158 32.62C20.7018 32.591 20.4122 32.4385 20.2106 32.196L14.2731 25.071C14.2332 25.0143 14.1975 24.9548 14.1662 24.8929C14.1662 24.8335 14.1663 24.7979 14.0831 24.7385C14.0293 24.6024 14.0011 24.4574 14 24.311C14.0011 24.1646 14.0293 24.0197 14.0831 23.8835C14.0831 23.8241 14.0831 23.7885 14.1662 23.7291C14.1975 23.6672 14.2332 23.6077 14.2731 23.551L20.2106 16.426C20.3223 16.292 20.4621 16.1842 20.6201 16.1103C20.7782 16.0364 20.9505 15.9982 21.125 15.9985C21.4025 15.998 21.6714 16.0946 21.885 16.2716C22.0052 16.3713 22.1046 16.4938 22.1775 16.6319C22.2504 16.7701 22.2952 16.9213 22.3096 17.0768C22.3239 17.2323 22.3074 17.3892 22.2611 17.5383C22.2147 17.6875 22.1394 17.826 22.0394 17.946L17.7287 23.1235H31.8125C32.1274 23.1235 32.4295 23.2486 32.6522 23.4713C32.8749 23.694 33 23.9961 33 24.311C33 24.626 32.8749 24.928 32.6522 25.1507C32.4295 25.3734 32.1274 25.4985 31.8125 25.4985Z" fill="white"/>
+            <defs>
+              <linearGradient id="paint0_linear_1172:8538" x1="48" y1="24.0461" x2="2.11507e-07" y2="24.0461" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#AF1B1B"/>
+                <stop offset="1" stop-color="#E22222"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+        <a class="nav uk-position-bottom-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="url(#paint0_linear_1172:8538)"/>
+            <path d="M16.1875 22.5015L30.2713 22.5015L25.9606 17.324C25.7591 17.0815 25.6621 16.7688 25.691 16.4548C25.72 16.1408 25.8725 15.8512 26.115 15.6496C26.3575 15.448 26.6702 15.3511 26.9842 15.38C27.2982 15.409 27.5878 15.5615 27.7894 15.804L33.7269 22.929C33.7668 22.9857 33.8025 23.0452 33.8338 23.1071C33.8338 23.1665 33.8337 23.2021 33.9169 23.2615C33.9707 23.3976 33.9989 23.5426 34 23.689C33.9989 23.8354 33.9707 23.9803 33.9169 24.1165C33.9169 24.1759 33.9169 24.2115 33.8338 24.2709C33.8025 24.3328 33.7668 24.3923 33.7269 24.449L27.7894 31.574C27.6777 31.708 27.5379 31.8158 27.3799 31.8897C27.2218 31.9636 27.0495 32.0018 26.875 32.0015C26.5975 32.002 26.3286 31.9054 26.115 31.7284C25.9948 31.6287 25.8954 31.5062 25.8225 31.3681C25.7496 31.2299 25.7048 31.0787 25.6904 30.9232C25.6761 30.7677 25.6926 30.6108 25.7389 30.4617C25.7853 30.3125 25.8606 30.174 25.9606 30.054L30.2713 24.8765L16.1875 24.8765C15.8726 24.8765 15.5705 24.7514 15.3478 24.5287C15.1251 24.306 15 24.0039 15 23.689C15 23.374 15.1251 23.072 15.3478 22.8493C15.5705 22.6266 15.8726 22.5015 16.1875 22.5015Z" fill="white"/>
+            <defs>
+              <linearGradient id="paint0_linear_1172:8538" x1="48" y1="24.0461" x2="2.11507e-07" y2="24.0461" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#AF1B1B"/>
+                <stop offset="1" stop-color="#E22222"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        
+        </a>
+      
+      </div>
+    </div>
+  </section>
+  
+  <section class="partners">
+    <div>
+      <img src="images/partners/1.png" />
+      <img src="images/partners/2.png" />
+      <img src="images/partners/3.png" />
+      <img src="images/partners/4.png" />
+      <img src="images/partners/5.png" />
+      <img src="images/partners/6.png" />
+      <img src="images/partners/7.png" />
+      <img src="images/partners/8.png" />
+      <img src="images/partners/1.png" />
+      <img src="images/partners/2.png" />
+      <img src="images/partners/3.png" />
+      <img src="images/partners/4.png" />
+      <img src="images/partners/5.png" />
+      <img src="images/partners/6.png" />
+      <img src="images/partners/7.png" />
+      <img src="images/partners/8.png" />
+      <img src="images/partners/1.png" />
+      <img src="images/partners/2.png" />
+      <img src="images/partners/3.png" />
+      <img src="images/partners/4.png" />
+      <img src="images/partners/5.png" />
+      <img src="images/partners/6.png" />
+      <img src="images/partners/7.png" />
+      <img src="images/partners/8.png" />
+      <img src="images/partners/1.png" />
+      <img src="images/partners/2.png" />
+      <img src="images/partners/3.png" />
+      <img src="images/partners/4.png" />
+      <img src="images/partners/5.png" />
+      <img src="images/partners/6.png" />
+      <img src="images/partners/7.png" />
+      <img src="images/partners/8.png" />
+    </div>
+  </section>
+  <section class="articles">
+    <div class="container">
+      <h2>Блог</h2>
+      <a href="/">
+        Смотреть все статьи
+        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0V4.5Z" fill="url(#paint0_linear)"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="-5.58793e-08" y1="4.5" x2="15" y2="4.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E22222"/>
+              <stop offset="1" stop-color="#AF1B1B"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+      <ul>
+        <li class="article">
+          <a href="/">
+            <img alt="" src="images/blog/article.png" />
+            <div class="article__info">
+              <span class="article__info_date">04.08.2021</span>
+              <p>Узнайте как ваше авто может приносить пассивный доход 24/7</p>
+              <span class="article__info_link">
+                    Узнать больше
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0V4.5Z" fill="url(#paint0_linear)"/>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="-5.58793e-08" y1="4.5" x2="15" y2="4.5" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#E22222"/>
+                          <stop offset="1" stop-color="#AF1B1B"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__block">
+      <a class="footer__block_top" href='/'>
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <ul class="footer__block_links">
+        <li>Разработка и внедрение информационных систем по обслуживанию производственного оборудования.</li>
+      </ul>
+    </div>
+    
+    <div class="footer__block">
+      <span class="footer__block_top">Страницы</span>
+      <ul class="footer__block_links">
+        <li>
+          <a href="/">Компания</a>
+        </li>
+        <li>
+          <a href="/">Блог</a>
+        </li>
+        <li>
+          <a href="/">Контакты</a>
+        </li>
+        <li>
+          <a href="/">Политика конфиденциальности</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer__block">
+      <span class="footer__block_top">Решения</span>
+      <ul class="footer__block_links">
+        <li>
+          <a href="/">Управление ремонтами и надежностью оборудования</a>
+        </li>
+        <li>
+          <a href="/">Управление энергоэффетивностью и углеродным следом</a>
+        </li>
+        <li>
+          <a href="/">Мобильные бригады</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <span class="footer__block_top">Контакты</span>
+      <ul class="footer__block_links">
+        <li>
+          <a href="mailto: contact@rcm-systems.ru">contact@rcm-systems.ru</a>
+        </li>
+        <li>
+          <a href="tel: +7 499 703−22−48">+7 499 703−22−48</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="developedBy">Developed by <a href="https://zigzag.team" target="_blank" rel="noopener">ZIGZAG</a></p>
+  <div class="gradientLine"></div>
+</footer>
+
+<div class="menu">
+  <div class="menu__wrapper">
+    <div>
+      <ul uk-accordion>
+        <li>
+          <a class="uk-accordion-title" href="#">Решения</a>
+          <div class="uk-accordion-content">
+            <ul>
+              <li>
+                <a href="/">Управление ремонтами и надежностью оборудования</a>
+              </li>
+              <li>
+                <a href="/">Управление энергоэффетивностью и углеродным следом</a>
+              </li>
+              <li>
+                <a href="/">Сервис управления выездными сотрудниками</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <a class="uk-accordion-title" href="#">Компания</a>
+          <div class="uk-accordion-content">
+            <ul>
+              <li>
+                <a href="/">Блог</a>
+              </li>
+              <li>
+                <a href="/">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      
+      <a href="#">Контакты</a>
+      
+      <a class="button" href="#modal-center" uk-toggle>Консультация</a>
+    </div>
+    
+    <p class="developedBy">Developed by <a href="https://zigzag.team" target="_blank" rel="noopener">ZIGZAG</a></p>
+  </div>
+</div>
+
+<div id="modal-center" class="uk-flex-top" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    
+    <h2>Оставьте заявку</h2>
+    
+    <form>
+      <label>
+        Ваш телефон
+        <input type="tel" placeholder="+7 499 703−22−48" />
+      </label>
+      
+      <button class="button" type="submit">Отправить</button>
+      
+      <p class="policy">Отправляя заявку вы даете согласие на обработку <a href="/">персональных данных</a></p>
+    </form>
+  
+  </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
