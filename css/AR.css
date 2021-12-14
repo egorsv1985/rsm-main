@@ -603,6 +603,10 @@
     color: #0D0A46;
 }
 
+.work-mobile {
+    display: none;
+}
+
 .questions {
     padding-bottom: 140px;
 }
