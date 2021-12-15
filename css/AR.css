@@ -470,9 +470,11 @@
     width: 100%;
     object-fit: contain;
 }
+
 .work-mobile {
     display: none;
 }
+
 .work {
     padding-bottom: 140px;
 }
@@ -506,31 +508,40 @@
     color: #FFFFFF;
 }
 
+/* 
 .work .tabs {
     display: flex;
     flex-direction: column;
 }
-.work .tabs__body{
-    align-self: flex-end;
+
+.work .tabs__body {
+    align-self: center;
 }
-.work .tabs__items {
+
+.work .tabs__items ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
+} */
 
-.work .tabs__item {
+.work .tabs__label {
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
     color: #E5E9ED;
+    cursor: pointer;
+    width: 100%;
 }
-.work .tabs__item:active {
+
+/* 
+.work input[type="radio"]:checked+label {
+
     font-size: 18px;
     position: relative;
-}
-.work .tabs__item:active::before {
+} */
+/* 
+.work input[type="radio"]:checked+label::before {
     content: "";
     display: block;
     width: 1px;
@@ -544,10 +555,35 @@
     right: -54%;
     z-index: 1;
 }
-.work .tabs__item:target {
+ */
+
+/* 
+.tabs__input {
+    display: none;
+}
+
+.tabs__items ul li input[type="radio"]:checked+label {
     font-size: 18px;
     position: relative;
 }
+
+
+.tabs__input:checked+.tabs__label::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150px;
+
+    background: #E5E9ED;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+
+    position: absolute;
+    top: -62px;
+    right: -54%;
+    z-index: 1;
+} */
+
+
 
 
 .work .tabs__body .tabs__block {
@@ -576,10 +612,6 @@
     display: flex;
 } */
 
-.work .tabs__body .tabs__block:target {
-    display: flex;
-    position: relative;
-}
 
 
 
@@ -1921,10 +1953,10 @@
         height: 50px;
         padding: 10px 0;
 
-        border-bottom: 1px solid rgba(255, 255, 255, .5); 
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
 
         font-family: "Gilroy", sans-serif;
-        font-weight: 500;        
+        font-weight: 500;
         font-size: 14px;
         line-height: 16px;
 
@@ -1953,7 +1985,7 @@
         width: 14px;
         height: 14px;
         background-image: url("../images/icons/arrow-tabs.svg");
-        color: #FFFFFF;        
+        color: #FFFFFF;
 
     }
 
@@ -1961,11 +1993,13 @@
         content: '';
         transform: rotate(-90deg);
     }
+
     .work-mobile ul .uk-open {
         border-bottom: 1px solid rgba(255, 255, 255, .5);
     }
+
     .work-mobile ul .uk-open .uk-accordion-content {
-       margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .work-mobile .uk-accordion-content p {
@@ -1975,6 +2009,14 @@
         font-size: 14px;
         line-height: 16px;
         color: #FFFFFF;
+    }
+
+    .work-mobile .uk-accordion-content img {
+        max-width: 266px;
+
+        background-color: #E5E2E9;
+        border-radius: 5px;
+
     }
 
     .work-mobile .uk-accordion-content ul li {

@@ -411,23 +411,86 @@
         <div class="work__content">
           <div class="tabs">
             <h2>Как это работает</h2>
-            <nav class="tabs__items">
-              <a href="#tab_01" class="tabs__item">Шаг 1: Диспетчер. Назначение работы</a>
-              <a href="#tab_02" class="tabs__item">Шаг 2: Диспетчер. Настройка обязательных действий.</a>
-              <a href="#tab_03" class="tabs__item">Шаг 3: Диспетчер. Создание подсказок</a>
-              <a href="#tab_04" class="tabs__item">Шаг 4: Исполнитель. Просмотр списка операций</a>
-              <a href="#tab_05" class="tabs__item">Шаг 5: Исполнитель. Доступ к подсказкам</a>
-              <a href="#tab_06" class="tabs__item">Шаг 6: Исполнитель. Контроль выполнения</a>
-              <a href="#tab_07" class="tabs__item">Шаг 7: Исполнитель. Видеозвонок эксперту</a>
-              <a href="#tab_08" class="tabs__item">Шаг 8: Диспетчер. Мониторинг статуса работ</a>
-              <a href="#tab_09" class="tabs__item">Шаг 9: Диспетчер. Исполнители на карте</a>
-              <a href="#tab_010" class="tabs__item">Шаг 10: Диспетчер. Формирование отчёта</a>
+            <nav class="tabs__nav">
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <input type="radio" id="radio-1" class="tabs__input">
+                  <label for="radio-1" class="tabs__label">
+                    <a href="#radio_01" class="tab__item">Шаг 1: Диспетчер. Назначение работы</a>
+                  </label>
+                </li>
+              </ul>
             </nav>
+
+            <!-- <nav class="tabs__items">
+              <ul>
+                <li>
+                  <input id="radio-1" type="radio" class="tabs_input" name="tabs-name">
+                  <label for="radio-1" class="tab__label">
+                    <a href="#tab_01" class="tab__item">Шаг 1: Диспетчер. Назначение работы</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input02" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input02" class="tabs__label">
+                    <a href="#tab_02" class="tabs__item">Шаг 2: Диспетчер. Настройка обязательных действий.</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input03" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input03" class="tabs__label">
+                    <a href="#tab_03" class="tabs__item">Шаг 3: Диспетчер. Создание подсказок</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input04" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input04" class="tabs__label">
+                    <a href="#tab_04" class="tabs__item">Шаг 4: Исполнитель. Просмотр списка операций</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input05" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input05" class="tabs__label">
+                    <a href="#tab_05" class="tabs__item">Шаг 5: Исполнитель. Доступ к подсказкам</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input06" type=" radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input06" class="tabs__label">
+                    <a href="#tab_06" class="tabs__item">Шаг 6: Исполнитель. Контроль выполнения</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input07" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input07" class="tabs__label">
+                    <a href="#tab_07" class="tabs__item">Шаг 7: Исполнитель. Видеозвонок эксперту</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input08" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input08" class="tabs__label">
+                    <a href="#tab_08" class="tabs__item">Шаг 8: Диспетчер. Мониторинг статуса работ</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input09" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input09" class="tabs__label">
+                    <a href="#tab_09" class="tabs__item">Шаг 9: Диспетчер. Исполнители на карте</a>
+                  </label>
+                </li>
+                <li>
+                  <input id="tab_input10" type="radio" class="tabs__input" name="tabs-name">
+                  <label for="tab_input10" class="tabs__label">
+                    <a href="#tab_10" class="tabs__item">Шаг 10: Диспетчер. Формирование отчёта</a>
+                  </label>
+                </li>
+              </ul>
+            </nav> -->
 
           </div>
         </div>
-        <div class="tabs__body">
-          <div id="tab_01" class="tabs__block">
+        <!-- <div class="tabs__body">
+          <div id="radio_01" class="tabs__block">
             <img src="images/work.png" alt="" class="tabs__img">
             <div class="tabs__wrap">
               <span class="tabs__num">01</span>
@@ -515,99 +578,99 @@
                 и видеофиксации совершаемых действий.</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <section class="work-mobile">
       <div class="container">
         <div class="work-mobile__box">
-        <h2>Как это работает</h2>
+          <h2>Как это работает</h2>
 
-        <ul uk-accordion>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 1: Диспетчер. Назначение работы</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 2: Диспетчер. Настройка обязательных действий.</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 3: Диспетчер. Создание подсказок</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
+          <ul uk-accordion>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 1: Диспетчер. Назначение работы</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 2: Диспетчер. Настройка обязательных действий.</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 3: Диспетчер. Создание подсказок</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
 
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 4: Исполнитель. Просмотр списка операций</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 5: Исполнитель. Доступ к подсказкам</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 6: Исполнитель. Контроль выполнения</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 7: Исполнитель. Видеозвонок эксперту</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 8: Диспетчер. Мониторинг статуса работ</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 9: Диспетчер. Исполнители на карте</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Шаг 10: Диспетчер. Формирование отчёта</a>
-            <div class="uk-accordion-content">
-              <img src="images/work.png" alt="" class="tabs__img">
-              <p>Задаётся последовательность выполнения операций, необходимость фото
-                и видеофиксации совершаемых действий.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 4: Исполнитель. Просмотр списка операций</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 5: Исполнитель. Доступ к подсказкам</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 6: Исполнитель. Контроль выполнения</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 7: Исполнитель. Видеозвонок эксперту</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 8: Диспетчер. Мониторинг статуса работ</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 9: Диспетчер. Исполнители на карте</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Шаг 10: Диспетчер. Формирование отчёта</a>
+              <div class="uk-accordion-content">
+                <img src="images/work.png" alt="" class="tabs__img">
+                <p>Задаётся последовательность выполнения операций, необходимость фото
+                  и видеофиксации совершаемых действий.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

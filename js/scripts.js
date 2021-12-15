@@ -5,6 +5,7 @@ const showMoreButton = [...document.querySelectorAll('.show-more')];
 const showMoreText = [...document.querySelectorAll('.show-more span')];
 const showMoreContent = [...document.querySelectorAll('.content')];
 
+
 const handleScroll = () => {
   if (window.pageYOffset > 200) {
     header.classList.add('scrolled')
@@ -12,6 +13,7 @@ const handleScroll = () => {
     header.classList.remove('scrolled')
   }
 }
+
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('is-active')
