@@ -406,26 +406,56 @@
       </div>
     </section>
 
+   <div class="tabs">
+      <div id="content-1">
+        Содержимое 1...
+      </div>
+      <div id="content-2">
+        Содержимое 2...
+      </div>
+      <div id="content-3">
+        Содержимое 3...
+      </div>
+
+      <div class="tabs__links">
+        <a href="#content-1">Вкладка 1</a>
+        <a href="#content-2">Вкладка 2</a>
+        <a href="#content-3">Вкладка 3</a>
+      </div>
+    </div>
     <section class="work">
       <div class="container">
         <div class="work__content">
           <div class="tabs">
             <h2>Как это работает</h2>
+
+            
             <nav class="tabs__nav">
               <ul class="tabs__list">
                 <li class="tabs__item">
-                  <input type="radio" id="radio-1" class="tabs__input">
-                  <label for="radio-1" class="tabs__label">
-                    <a href="#radio_01" class="tab__item">Шаг 1: Диспетчер. Назначение работы</a>
+                  <input id="radio-1" type="radio" class="tab__input" nema="tab-name">
+                  <label for="radio-1" class="tab__label">
+                    <p class="tab__item">Шаг 1: Диспетчер. Назначение работы</p>
                   </label>
                 </li>
+                <li class="tabs__item">
+                  <input id="radio-2" type="radio" class="tab__input" nema="tab-name">
+                  <label for="radio-2" class="tab__label">
+                    <p class="tab__item">Шаг 2: Диспетчер. Настройка обязательных действий.</p>
+                  </label>
+                </li>
+
+               
+
               </ul>
             </nav>
+
+           
 
             <!-- <nav class="tabs__items">
               <ul>
                 <li>
-                  <input id="radio-1" type="radio" class="tabs_input" name="tabs-name">
+                  <input id="radio-1" type="radio" class="tabs__input" name="tabs-name">
                   <label for="radio-1" class="tab__label">
                     <a href="#tab_01" class="tab__item">Шаг 1: Диспетчер. Назначение работы</a>
                   </label>
@@ -489,8 +519,8 @@
 
           </div>
         </div>
-        <!-- <div class="tabs__body">
-          <div id="radio_01" class="tabs__block">
+        <div class="tabs__body">
+          <div id="radio" class="tabs__block">
             <img src="images/work.png" alt="" class="tabs__img">
             <div class="tabs__wrap">
               <span class="tabs__num">01</span>
@@ -498,7 +528,7 @@
                 и видеофиксации совершаемых действий.</p>
             </div>
           </div>
-          <div id="tab_02" class="tabs__block">
+          <div id="radio" class="tabs__block">
             <img src="images/work.png" alt="" class="tabs__img">
             <div class="tabs__wrap">
               <span class="tabs__num">02</span>
@@ -506,7 +536,7 @@
                 и видеофиксации совершаемых действий.</p>
             </div>
           </div>
-          <div id="tab_03" class="tabs__block">
+          <!-- <div id="tab_03" class="tabs__block">
             <img src="images/work.png" alt="" class="tabs__img">
             <div class="tabs__wrap">
               <span class="tabs__num">03</span>
@@ -577,11 +607,11 @@
               <p class="tabs__text">Задаётся последовательность выполнения операций, необходимость фото
                 и видеофиксации совершаемых действий.</p>
             </div>
-          </div>
-        </div> -->
+          </div> -->
+        </div>
       </div>
     </section>
-
+    
     <section class="work-mobile">
       <div class="container">
         <div class="work-mobile__box">

@@ -41,3 +41,20 @@ showMoreButton.map(button => {
     })
   })
 });
+
+// const tabItem = document.querySelector('.tab__item');
+// const open = document.querySelector('.open');
+// tabItem.style.display = 'none'
+
+
+// open.addEventListener("click", function() {
+
+//     if(popup.style.display == 'none')  popup.style.display = 'block';
+//     else popup.style.display = 'none'
+    
+//   });
+// const tabItem = document.querySelector('.tabs__item');
+// const tabBlock = document.querySelectorAll('.tabs__block');
+// tabsItem.addEventListener('click', () => {
+//   tabsBlock.style.display = 'block'
+// });
